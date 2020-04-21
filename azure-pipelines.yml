@@ -38,3 +38,9 @@ steps:
     runOptions: 'commands'
     commands: 'mkdir test101'
     readyTimeout: '20000'
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'omar@40.121.41.196'
+    runOptions: 'commands'
+    commands: 'mkdir test111'
+    readyTimeout: '20000'
