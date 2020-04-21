@@ -19,6 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 - task: SSH@0
   inputs:
+    sshEndpoint: 'omar@40.121.41.196'
     runOptions: 'commands'
     commands: 'mkdir test11'
     readyTimeout: '20000'
