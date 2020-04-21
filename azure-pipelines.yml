@@ -28,9 +28,7 @@ steps:
     sshEndpoint: 'omar@40.121.41.196'
 - task: SSH@0
   inputs:
-    runOptions: 'commands'
-    commands: 'mkdir test101'
-    readyTimeout: '20000'
+    sshEndpoint: 'omar@40.121.41.196'
     runOptions: 'commands'
     commands: 'rm -rf test101'
     readyTimeout: '20000'
