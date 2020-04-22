@@ -35,6 +35,12 @@ steps:
     pip3 list
     deactivate
   displayName: 'Edit Env'
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'omar@40.121.41.196'
+    runOptions: 'commands'
+    commands: 'ls'
+    readyTimeout: '20000'
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'omar@40.121.41.196'
