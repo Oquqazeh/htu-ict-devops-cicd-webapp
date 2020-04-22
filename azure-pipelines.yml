@@ -27,5 +27,15 @@ steps:
   inputs:
     scriptSource: 'filePath'
     scriptPath: 'test_test1.py'
+- script: |
+    python -m pip install --upgrade pip
+    python3 -m venv task
+    source task/bin/activate
+    pip3 install -r requirements.txt
+    pip3 list
+    deactivate
+  displayName: 'Edit Env'
+    
+      
 
 
