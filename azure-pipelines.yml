@@ -40,7 +40,7 @@ steps:
     sshEndpoint: 'omar1@40.121.41.196'
     sourceFolder: 'hello.py'
     contents: '**'
-    targetFolder: 'ls /home'
+    targetFolder: '/home /omar'
     readyTimeout: '20000'
 - task: CopyFilesOverSSH@0
   inputs:
