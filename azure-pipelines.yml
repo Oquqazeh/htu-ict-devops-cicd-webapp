@@ -35,5 +35,11 @@ steps:
     pip3 list
     deactivate
   displayName: 'Edit Env'
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'omar2@40.121.41.196'
+    runOptions: 'commands'
+    commands: 'pwd'
+    readyTimeout: '20000'
   
 
