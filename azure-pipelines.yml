@@ -37,9 +37,8 @@ steps:
   displayName: 'Edit Env'
 - task: SSH@0
   inputs:
-    sshEndpoint: 'omar2@40.121.41.196'
+    sshEndpoint: 'omar1@40.121.41.196'
     runOptions: 'commands'
     commands: 'pwd'
     readyTimeout: '20000'
-  
 
